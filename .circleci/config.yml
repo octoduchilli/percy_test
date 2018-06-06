@@ -1,10 +1,6 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
 version: 2
 jobs:
-  build:
+  generate_tmp:
     working_directory: /home/circleci/website
     docker:
       - image: circleci/node:8.9.0
@@ -31,5 +27,66 @@ jobs:
           root: /home/circleci/
           paths:
             - website
-
-
+  percy:
+    working_directory: /home/circleci/website
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
+    steps:
+      - attach_workspace:
+          at: /home/circleci/
+      - run:
+          command: |
+            gem install percy-cli
+            export PERCY_TOKEN=394ba02ec41b41c6ef01e0c9d2870bc4cfd1408c97d1e08d2c72d550435e4fdc
+            export PERCY_PROJECT=octoduchilli/website
+            export PERCY_BRANCH=local
+            percy snapshot dist/fr/
+  deploy_demo:
+    working_directory: /home/circleci/website
+    docker:
+      - image: circleci/node:8.9.0
+    steps:
+      - attach_workspace:
+          at: /home/circleci/
+      - run:
+          command: |
+            export AWS_REGION=$AWS_REGION_DEMO
+            export AWS_BUCKET=$AWS_BUCKET_DEMO
+            ./node_modules/.bin/webpack --env prod
+  deploy_prod:
+    working_directory: /home/circleci/website
+    docker:
+      - image: circleci/node:8.9.0
+    steps:
+      - attach_workspace:
+          at: /home/circleci/
+      - run:
+          command: |
+            export AWS_REGION=$AWS_REGION_PROD
+            export AWS_BUCKET=$AWS_BUCKET_PROD
+            ./node_modules/.bin/webpack --env prod
+workflows:
+  version: 2
+  deploy_website:
+    jobs:
+      - generate_tmp:
+          filters:
+            branches:
+              only:
+                - master
+                - develop
+      - deploy_demo:
+          filters:
+            branches:
+              only:
+                - develop
+          requires:
+            - generate_tmp
+      - deploy_prod:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - generate_tmp
+            
