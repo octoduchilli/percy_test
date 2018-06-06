@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>$(i18n('customers.page_title')) | Appaloosa Store</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- include jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+</head>
+<body>
+	<!--#set var="activepage" value="customers" -->
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<!--#include virtual="inc/header.shtml" -->
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<div class="testimonial-box">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<header class="section-header">
+								<h2 class="title text-center mx-auto">$(i18n('customers.join_the_html'))</h2>
+							</header>
+							<div class="customers-list-holder">
+								<ul class="customers-list list-unstyled d-flex justify-content-center align-items-center flex-wrap mb-0">
+									<li><img src="images/bnp-paribas-gray-img.svg" width="124" height="29" alt="BNP PARIBAS"></li>
+									<li><img src="images/saint-gobain-gray-img.svg" width="109" height="45" alt="SAINT GOBAIN"></li>
+									<li><img src="images/leroy-merlin-gray-img.svg" width="72" height="43" alt="LEROY MERLIN"></li>
+									<li><img src="images/jarger-lecoultre-gray-img.svg" width="171" height="42" alt="Jarger leCoultre"></li>
+									<li><img src="images/la-poste-gray-img.svg" width="122" height="34" alt="LA POSTE"></li>
+									<li><img src="images/sncf-gray-img.svg" width="67" height="37" alt="SNCF"></li>
+									<li><img src="images/air-liquide-gray-img.svg" width="115" height="37" alt="AIR LIQUIDE"></li>
+									<li><img src="images/canal-plus-gray-img.svg" width="112" height="21" alt="CANAL Plus"></li>
+									<li><img src="images/tapptic-gray-img.svg" width="91" height="26" alt="tapptic"></li>
+									<li><img src="images/adeo-gray-img.svg" width="80" height="41" alt="Adeo"></li>
+									<li><img src="images/ixxi-gray-img.svg" width="56" height="24" alt="Ixxi"></li>
+									<li><img src="images/vinci-gray-img.svg" width="112" height="30" alt="Vinci"></li>
+									<li><img src="images/edf-gray-img.svg" width="76" height="33" alt="EDF"></li>
+									<li><img src="images/playtech-gray-img.svg" width="116" height="26" alt="Playtech"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="features-box">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<header class="section-header">
+								<h2 class="title text-center">$(i18n('customers.see_how_html'))</h2>
+							</header>
+							<ul class="card-list list-unstyled d-flex flex-column flex-md-row align-items-center align-items-md-start justify-content-md-center mb-0">
+								<li class="card">
+									<div class="card-header d-flex flex-column text-white text-center bg-gradient-primary mx-auto">
+										<div class="card-title text-uppercase">$(i18n('customers.logistics'))</div>
+										<div class="customer d-flex flex-column justify-content-center">
+											<div class="name h3 text-white">$(i18n('customers.la_poste'))</div>
+											<div class="text">$(i18n('customers.french_postal_services'))</div>
+										</div>
+									</div>
+									<div class="card-body text-center">
+										<div class="text-holder">
+											<p class="card-text">$(i18n('customers.the_french_postal_service_is_entering_the_digital_era_by_equi'))</p>
+										</div>
+										<a href="http://resources.appaloosa-store.com/case-studies/la-poste-facteo-work-apps" class="card-link">$(i18n('customers.read_case_study'))</a>
+									</div>
+								</li>
+								<li class="card">
+									<div class="card-header d-flex flex-column text-white text-center bg-gradient-warning mx-auto">
+										<div class="card-title text-uppercase">$(i18n('customers.retail'))</div>
+										<div class="customer d-flex flex-column justify-content-center">
+											<div class="name h4 text-white">$(i18n('customers.leroy_merlin'))</div>
+											<div class="text">$(i18n('customers.home_improvement_leader'))</div>
+										</div>
+									</div>
+									<div class="card-body text-center">
+										<div class="text-holder">
+											<p class="card-text">$(i18n('customers.leroy_merlin_is_empowering_7000_employees_by_offering_an_ent'))</p>
+										</div>
+										<a href="http://resources.appaloosa-store.com/case-studies/leroy-merlin-driving-innovation-through-mobility" class="card-link">$(i18n('customers.read_case_study'))</a>
+									</div>
+								</li>
+								<li class="card">
+									<div class="card-header d-flex flex-column text-white text-center bg-gradient-success mx-auto">
+										<div class="card-title text-uppercase">$(i18n('customers.luxury'))</div>
+										<div class="customer d-flex flex-column justify-content-center">
+											<div class="name text-small">$(i18n('customers.jaeger_lecoultre'))</div>
+											<div class="text">$(i18n('customers.luxury_watch_manufacturer'))</div>
+										</div>
+									</div>
+									<div class="card-body text-center">
+										<div class="text-holder">
+											<p class="card-text">$(i18n('customers.jaegerlecoultre_is_transforming_its_instore_customer_experien'))</p>
+										</div>
+										<a href="http://resources.appaloosa-store.com/case-studies/mobile-app-transforming-customer-experience" class="card-link">$(i18n('customers.read_case_study'))</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="testimonial-carousel-box">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<header class="section-header">
+								<h2 class="title text-center d-none d-lg-block"><mark class="mark-light-yellow">$(i18n('customers.hear'))</mark> $(i18n('customers.from_our_customers'))</h2>
+								<h2 class="title text-center d-lg-none">$(i18n('customers.our_customers')) <mark class="mark-light-yellow">$(i18n('customers.success_stories'))</mark></h2>
+							</header>
+							<div id="testimonial-carousel" class="testimonial-carousel carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="holder">
+										<div class="carousel-item active">
+											<blockquote class="blockquote">
+												<div class="text-wrap">
+													<p>$(i18n('customers.testimonial_1_quote_html'))</p>
+												</div>
+												<footer class="blockquote-footer d-flex">
+													<div class="img-holder">
+														<img src="images/la-poste-sandy-brown-img.svg" width="60" height="48" alt="LA POSTE">
+													</div>
+													<div class="text-holder">
+														<cite title="$(i18n('customers.testimonial_1_customer'))">$(i18n('customers.testimonial_1_customer'))</cite>
+														<p>$(i18n('customers.testimonial_1_customer_title')) <br class="d-lg-none">$(i18n('customers.testimonial_1_customer_title_desc'))</p>
+													</div>
+												</footer>
+											</blockquote>
+										</div>
+										<div class="carousel-item">
+											<blockquote class="blockquote">
+												<div class="text-wrap">
+													<p>$(i18n('customers.testimonial_2_quote_html'))</p>
+												</div>
+												<footer class="blockquote-footer d-flex">
+													<div class="img-holder">
+														<img src="images/leroy-merlin-sandy-brown-img.svg" width="60" height="48" alt="Leroy Merlin">
+													</div>
+													<div class="text-holder">
+														<cite title="$(i18n('customers.testimonial_2_customer'))">$(i18n('customers.testimonial_2_customer'))</cite>
+														<p>$(i18n('customers.testimonial_2_customer_title')) <br class="d-lg-none">$(i18n('customers.testimonial_2_customer_title_desc'))</p>
+													</div>
+												</footer>
+											</blockquote>
+										</div>
+										<div class="carousel-item">
+											<blockquote class="blockquote">
+												<div class="text-wrap">
+													<p>$(i18n('customers.testimonial_3_quote_html'))</p>
+												</div>
+												<footer class="blockquote-footer d-flex">
+													<div class="img-holder">
+														<img src="images/jaeger-lecoultre-sandy-brown-img.svg" width="60" height="48" alt="Jaeger lecoultre">
+													</div>
+													<div class="text-holder">
+														<cite title="$(i18n('customers.testimonial_3_customer'))">$(i18n('customers.testimonial_3_customer'))</cite>
+														<p>$(i18n('customers.testimonial_3_customer_title')) <br class="d-lg-none">$(i18n('customers.testimonial_3_customer_title_desc'))</p>
+													</div>
+												</footer>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">$(i18n('index.previous'))</span>
+								</a>
+								<a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">$(i18n('index.next'))</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<hr class="d-none d-md-block">
+				</div>
+			</div>
+			<div class="call-to-action">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="holder mx-auto">
+								<header class="section-header">
+									<h2 class="title text-center">$(i18n('call_to_action_2018.try_appaloosa_html'))</h2>
+								</header>
+								<form class="form-action d-flex flex-column flex-lg-row justify-content-between mx-auto">
+									<div class="form-group">
+										<label for="email" class="sr-only">$(i18n('call_to_action_2018.work_email'))</label>
+										<input type="email" class="form-control" id="email" placeholder="$(i18n('call_to_action_2018.enter_work_email'))">
+									</div>
+									<button type="submit" class="btn btn-primary">$(i18n('call_to_action_2018.get_started'))</button>
+								</form>
+								<ul class="info-list list-unstyled d-flex justify-content-center flex-wrap text-secondary">
+									<li>$(i18n('call_to_action_2018.no_credit_card_required'))</li>
+									<li>$(i18n('call_to_action_2018.easy_setup'))</li>
+									<li>$(i18n('call_to_action_2018.cancel_anytime'))</li>
+								</ul>
+								<div class="demo-box d-flex align-items-center justify-content-between justify-content-lg-center">
+									<div class="text-warning">$(i18n('call_to_action_2018.need_a_quick_11_demo_to_walk_you_through_appaloosa'))</div>
+									<a href="#" class="btn btn-warning text-white">$(i18n('call_to_action_2018.schedule_a_demo'))</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer of the page -->
+		<!--#include virtual="inc/footer.shtml" -->
+	</div>
+</body>
+</html>

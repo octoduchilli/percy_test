@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- google-signin-client_id meta element -->
+	<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+	<title>Appaloosa</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- include jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+	<!-- include Google Sign-In library -->
+	<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+	<script>
+		function onSuccess(googleUser) {
+			console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+		}
+		function onFailure(error) {
+			console.log(error);
+		}
+		function renderButton() {
+			gapi.signin2.render('signin-google', {
+				'scope': 'profile email',
+				'width': 240,
+				'height': 50,
+				'longtitle': true,
+				'theme': 'dark',
+				'onsuccess': onSuccess,
+				'onfailure': onFailure
+			});
+		}
+	</script>
+</head>
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<!--#include virtual="inc/header-simple.shtml" -->
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<div class="login-box">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="text-box text-center mx-auto">
+								<h1 class="title">
+									<span class="d-none d-lg-inline-block">Welcome back!</span>
+									<span class="d-lg-none">Login to your store</span>
+								</h1>
+								<div class="d-none d-lg-block">
+									<p>You’re about to sign in to an administrator dashboard.<br> Would you rather install your enterprise app store and download apps ?<br> <a href="#">Open this link on your mobile device.</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<form class="login-form mx-auto">
+								<div class="form-group-holder">
+									<div class="form-group">
+										<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" placeholder="Enter email">
+									</div>
+									<div class="form-group">
+										<label for="password">Password</label>
+										<input type="password" class="form-control" id="password" placeholder="Password">
+									</div>
+								</div>
+								<div class="check-holder d-flex justify-content-between">
+									<div class="custom-control custom-checkbox d-inline-flex">
+										<input type="checkbox" class="custom-control-input" id="check">
+										<label class="custom-control-label" for="check">Remember me</label>
+									</div>
+									<a href="#">Forgot your password?</a>
+								</div>
+								<div class="btn-holder">
+									<button type="submit" class="btn btn-primary w-100">Sign in</button>
+									<div class="choose-divider text-center"><span class="position-relative">Or</span></div>
+									<div id="signin-google" class="d-flex justify-content-center"></div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

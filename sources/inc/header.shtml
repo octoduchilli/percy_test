@@ -1,0 +1,67 @@
+<header id="header" class="fixed-top">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="$(i18n('header.toogle_navigation_open'))">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- page logo -->
+			<div class="logo-holder d-flex align-items-center">
+				<a href="/$(lang)" class="navbar-brand">
+					<img id="appaloosa-header-logo" alt="appaloosa" src="images/logo-appaloosa-enterprise-app-store.svg" width="174" height="54">
+					<span class="sr-only">($(i18n('header.current')))</span>
+					<!-- should be dynamique -->
+				</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<div class="navbar-collapse-header d-flex align-items-center justify-content-end d-lg-none">
+					<div class="text-uppercase">$(i18n('header.menu'))</div>
+					<button class="close" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="$(i18n('header.toogle_navigation_close'))">
+						<span></span>
+					</button>
+				</div>
+				<div class="holder w-100">
+					<div class="d-flex flex-column align-items-center">
+						<div class="d-flex flex-column flex-lg-row align-items-center justify-content-between w-100">
+							<ul class="navbar-nav align-items-center">
+								<li class="nav-item">
+									<a href="/$(lang)/features" class="nav-link">$(i18n('navigation.features'))</a>
+								</li>
+								<li class="nav-item">
+									<a href="/$(lang)/pricing" class="nav-link">$(i18n('navigation.pricing'))</a>
+								</li>
+								<li class="nav-item">
+									<a href="/$(lang)/customers" class="nav-link">$(i18n('navigation.customers'))</a>
+								</li>
+								<li class="nav-item">
+									<a href="http://resources.appaloosa-store.com/" class="nav-link">$(i18n('navigation.resources'))</a>
+								</li>
+							</ul>
+							<div class="schedule-holder d-none d-lg-block">
+								<a href="#">$(i18n('call_to_action_2018.schedule_a_demo'))</a>
+							</div>
+							<ul class="sign-up-box list-unstyled d-flex flex-column flex-lg-row align-items-center mb-0">
+								<li class="d-none d-lg-block">
+									<a href="/registrations/new?locale=$(lang)" class="btn btn-primary">$(i18n('call_to_action_2018.try_free'))</a>
+								</li>
+								<li>
+									<a href="/users/sign_in?locale=$(lang)" class="btn btn-secondary">$(i18n('header.log_in'))</a>
+								</li>
+								<li class="d-lg-none">
+									<a href="/registrations/new?locale=$(lang)" class="btn btn-primary">$(i18n('header.sign_up'))</a>
+								</li>
+							</ul>
+						</div>
+						<div class="navbar-collapse-footer d-lg-none">
+							<button class="close text-uppercase" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">$(i18n('header.close'))</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="sign-box list-unstyled d-flex mb-0 d-lg-none">
+				<li>
+					<a href="/users/sign_in?locale=$(lang)" class="btn btn-secondary">$(i18n('header.log_in'))</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>

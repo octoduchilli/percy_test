@@ -1,0 +1,38 @@
+{
+  "name": "appaloosa-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "generate:template": "python ./compile_shtml_to_html.py",
+    "generate:css": "node_modules/.bin/node-sass --style=compressed sources/scss/bootstrap.scss .tmp/css/bootstrap.css && node_modules/.bin/node-sass --style=compressed sources/scss/main.scss .tmp/css/main.css",
+    "move:assets": "cp -a sources/assets/. .tmp",
+    "build:website": "webpack",
+    "clean": "rm -rf .tmp dist",
+    "build": "npm run clean && npm run generate:template && npm run generate:css && npm run move:assets && npm run build:website"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appaloosa-store/website-2018.git"
+  },
+  "author": "Appaloosa Team",
+  "bugs": {
+    "url": "https://github.com/appaloosa-store/website-2018/issues"
+  },
+  "homepage": "https://github.com/appaloosa-store/website-2018#readme",
+  "devDependencies": {
+    "aws-sdk": "2.199.0",
+    "chalk": "2.3.1",
+    "css-loader": "0.28.9",
+    "extract-loader": "1.0.2",
+    "file-loader": "1.1.6",
+    "html-loader": "./lib/html-loader",
+    "html-webpack-plugin": "2.30.1",
+    "i18n-webpack-plugin": "1.0.0",
+    "node-sass": "4.7.2",
+    "postcss-loader": "2.1.0",
+    "progress": "2.0.0",
+    "script-ext-html-webpack-plugin": "1.8.8",
+    "webpack": "3.10.0",
+    "webpack-manifest-plugin": "1.3.2"
+  }
+}

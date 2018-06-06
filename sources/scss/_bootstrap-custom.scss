@@ -1,0 +1,223 @@
+// custom variables and override bootstrap variables
+
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$white-smoke: #F7F7F7;
+$snow: #FBFBFF;
+$ghost-white: #F8F5F4;
+
+$light-cyan: #D7E8E5;
+$light-sea-green: #169984;
+$aquamarine: #6AC1B9;
+
+$moccasin: #FFECBF;
+$peach-puff: #F9D69C;
+$dark-orange: #FFA200;
+$papaya-whip: #F9E3D8;
+$coral: #F27C48;
+$light-yellow: #FEF2DD;
+$light-salmon: #F49F68;
+$lemon-chiffon: #E9F5D9;
+$light-green: #91C36F;
+$medium-cyan: #D9F5F2;
+$medium-turquoise: #56C5BB;
+$medium-green: #8FC46A;
+$tomato: #F07C4F;
+$turquoise: #5BC4BA;
+$pale-goldenrod: #FFECCA;
+$salmon: #F29E6D;
+
+$sandy-brown: #DFB48A;
+
+$lavender: #DBD8E7;
+
+$gainsboro: #E9E9ED;
+$light-steel-blue: #B7B5C0;
+$medium-purple: #A8A5B5;
+
+$gray: #84828F;
+
+$light-black: #211F2D;
+
+$colors: (
+	blue: $blue,
+	indigo: $indigo,
+	purple: $purple,
+	pink: $pink,
+	red: $red,
+	orange: $orange,
+	yellow: $yellow,
+	green: $green,
+	teal: $teal,
+	cyan: $cyan,
+	white: $white,
+	gray: $gray-600,
+	gray-dark: $gray-800
+);
+
+$theme-colors: (
+	primary: $blue,
+	secondary: $gray-600,
+	success: $aquamarine,
+	info: $cyan,
+	warning: $sandy-brown,
+	danger: $red,
+	light: $gray-100,
+	dark: $gray-800
+);
+
+$spacer: 1rem;
+$spacers: (
+	0: 0,
+	1: ($spacer * .25),
+	2: ($spacer * .5),
+	3: $spacer,
+	4: ($spacer * 1.5),
+	5: ($spacer * 3),
+	6: ($spacer * 4.5),
+	7: ($spacer * 6),
+	8: ($spacer * 7.5),
+	9: ($spacer * 9),
+	10: ($spacer * 10.5)
+);
+
+// Body
+$body-bg: $white;
+$body-color: $light-black;
+
+// Links
+$link-color: $aquamarine;
+$link-hover-decoration: none;
+
+// Fonts
+$font-family-sans-serif: 'Alegreya Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-family-Whitney: 'Whitney', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-family-SFProText: 'SFProText', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-family-GTEestiDisplay: 'GTEestiDisplay', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+
+$rem-base-for-function: 16px;
+
+$h1-font-size: $font-size-base * 3.0625;
+$h2-font-size: $font-size-base * 2.625;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.375;
+$h6-font-size: $font-size-base * 1.125;
+
+$headings-font-family: $font-family-Whitney;
+$headings-font-weight: 700;
+$headings-line-height: 1.25;
+$headings-color: $body-color;
+
+$mark-padding: 0 7px 2px;
+$mark-bg: rgba($moccasin, .6);
+
+$hr-border-color: $lavender;
+$hr-border-width: 18.125rem;
+$hr-margin-y: 5.75rem;
+
+// Grid breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 972px,
+	xl: 1200px
+);
+
+// Grid columns
+$grid-gutter-width: 10px;
+
+// Grid containers
+$container-max-widths: (
+	sm: 982px
+);
+
+// Navbar
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+
+$navbar-light-color: $light-black;
+$navbar-light-hover-color: $light-sea-green;
+$navbar-light-active-color: $navbar-light-hover-color;
+
+$navbar-brand-padding-y: 0;
+
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-light-toggler-icon-bg: $light-black;
+
+// Forms
+$input-padding-y: .9375rem;
+$input-padding-x: 1.125rem;
+
+$input-bg: $ghost-white;
+$input-color: $light-black;
+$input-border-color: $input-bg;
+$input-box-shadow: 0 0 0 1px rgba(231, 231, 231, .76);
+
+$input-placeholder-color: $light-steel-blue;
+
+$input-focus-color: $input-color;
+$input-focus-bg: $input-bg;
+$input-focus-border-color: $input-bg;
+$input-focus-box-shadow: 0 0 0 1px rgba(255,169,0,0.76);
+
+$custom-control-gutter: 1.25rem;
+
+$custom-control-indicator-bg: $gainsboro;
+$custom-control-indicator-size: .875rem;
+$custom-control-indicator-bg-size: 70% 70%;
+$custom-control-indicator-checked-bg: $aquamarine;
+$custom-control-indicator-focus-box-shadow: none;
+
+$form-group-margin-bottom: 1.3125rem;
+
+// Navs
+$nav-tabs-border-color: $light-cyan !default;
+
+$nav-tabs-link-active-color: $light-sea-green;
+$nav-tabs-link-active-bg: transparent;
+$nav-tabs-link-active-border-color: transparent;
+
+// Cards
+$card-bg: transparent;
+$card-border-radius: 0;
+
+// Carousel
+$carousel-control-width: 62px;
+$carousel-control-icon-width: $carousel-control-width;
+
+$animation-speed: .27s;
+
+// Buttons
+
+$btn-transition: color $animation-speed ease-in-out,
+				background-color $animation-speed ease-in-out,
+				border-color $animation-speed ease-in-out,
+				box-shadow $animation-speed ease-in-out;

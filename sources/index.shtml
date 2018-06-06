@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>$(i18n('index.page_title')) | Appaloosa Store</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- include jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+</head>
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<!--#include virtual="inc/header.shtml" -->
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<div class="skew-section-holder d-flex flex-column">
+				<div class="hero-section order-1 order-lg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col text-center">
+								<div class="img-box">
+									<picture>
+										<source srcset="images/hero-img-small.png, images/hero-img-small-2x.png 2x" media="(max-width: 972px)">
+										<source srcset="images/hero-img-large.png, images/hero-img-large-2x.png 2x">
+										<img src="images/hero-img-large.png" alt="image description">
+									</picture>
+								</div>
+								<div class="text-box">
+									<h1 class="title mx-auto">$(i18n('index.maximize_the_deployment_html'))</h1>
+									<div class="text-holder mx-auto">
+										<p>$(i18n('index.deploy_private_ios_and_android_apps_to_employees_or_beta_test'))</p>
+									</div>
+									<div class="btn-holder">
+										<a href="/registrations/new?locale=$(lang)" class="btn btn-primary">$(i18n('index.try_free_for_14_days_html'))</a>
+									</div>
+									<ul class="info-list list-unstyled d-flex justify-content-center flex-wrap mb-0">
+										<li>$(i18n('index.no_credit_card_required'))</li>
+										<li>$(i18n('index.easy_setup'))</li>
+										<li>$(i18n('index.cancel_anytime'))</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="customers-section skew-green order-4 order-lg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<header class="section-header">
+									<h2 class="title text-center">$(i18n('index.used_and_trusted_html'))</h2>
+								</header>
+								<div class="customers-list-holder">
+									<ul class="customers-list list-unstyled d-flex justify-content-center align-items-center flex-wrap mb-0">
+										<li><img src="images/bnp-paribas-img.svg" width="124" height="29" alt="BNP PARIBAS"></li>
+										<li><img src="images/saint-gobain-img.svg" width="109" height="45" alt="SAINT GOBAIN"></li>
+										<li><img src="images/leroy-merlin-img.svg" width="72" height="43" alt="LEROY MERLIN"></li>
+										<li><img src="images/jarger-lecoultre-img.svg" width="171" height="42" alt="Jarger leCoultre"></li>
+										<li><img src="images/la-poste-img.svg" width="122" height="34" alt="LA POSTE"></li>
+										<li><img src="images/sncf-img.svg" width="67" height="37" alt="SNCF"></li>
+										<li><img src="images/air-liquide-img.svg" width="115" height="37" alt="AIR LIQUIDE"></li>
+										<li><img src="images/canal-plus-img.svg" width="112" height="21" alt="CANAL Plus"></li>
+										<li><img src="images/tapptic-img.svg" width="91" height="26" alt="tapptic"></li>
+										<li><img src="images/adeo-img.svg" width="80" height="41" alt="Adeo"></li>
+									</ul>
+								</div>
+								<div class="section-link-holder text-center">
+									<a href="/$(lang)/customers" class="section-link">$(i18n('index.read_about_why_and_how_they_use_appaloosa'))</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="personal-corporate skew-orange order-2 order-lg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<header class="section-header">
+									<h2 class="title text-center mx-auto">$(i18n('index.deploy_enterprise_apps_html'))</h2>
+								</header>
+								<div class="text-box d-flex flex-column flex-lg-row justify-content-lg-around align-items-center">
+									<div class="img-holder order-lg-1">
+										<picture>
+											<source srcset="images/secure-img-small.png, images/secure-img-small-2x.png 2x" media="(max-width: 972px)">
+											<source srcset="images/secure-img-large.png, images/secure-img-large-2x.png 2x">
+											<img src="images/secure-img-large.png" alt="image description">
+										</picture>
+									</div>
+									<div class="text-holder">
+										<p>$(i18n('index.carry_out_successful_byod_deployments_html'))</p>
+										<p>$(i18n('index.enable_employees_to_access_work_apps_anytime_html'))</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="engaging-ui skew-light-green order-3 order-lg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<header class="section-header">
+									<h2 class="title text-center">$(i18n('index.provide_a_html'))</h2>
+								</header>
+								<div class="text-box d-flex flex-column flex-lg-row justify-content-lg-around align-items-center">
+									<div class="img-holder">
+										<div class="d-inline-block">
+											<picture>
+												<source srcset="images/engaging-ui-img-small.png, images/engaging-ui-img-small-2x.png 2x" media="(max-width: 972px)">
+												<source srcset="images/engaging-ui-img-large.png, images/engaging-ui-img-large-2x.png 2x">
+												<img src="images/secure-img-large.png" alt="image description">
+											</picture>
+										</div>
+									</div>
+									<div class="text-holder">
+										<p>$(i18n('index.engage_endusers_html'))</p>
+										<p>$(i18n('index.95_of_our_total_user_base_has_joined_html'))</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="working-process skew-coral d-none d-lg-block order-4 order-lg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<header class="section-header">
+									<h2 class="title text-center">$(i18n('index.how_does_it_html'))</h2>
+								</header>
+								<ol class="step-list list-unstyled d-flex justify-content-sm-between">
+									<li class="text-center">
+										<div class="title">$(i18n('index.sign_up'))</div>
+										<div class="img-holder d-flex justify-content-center">
+											<div class="holder d-flex align-items-center">
+												<picture>
+													<source srcset="images/step1-img-large.png, images/step1-img-large-2x.png 2x">
+													<img src="images/hero-img-large.png" width="130" height="116" alt="image description">
+												</picture>
+											</div>
+										</div>
+										<div class="text-holder">
+											<p>$(i18n('index.start_with_a_free_14_days_trial_no_credit_card_required_no_co'))</p>
+										</div>
+									</li>
+									<li class="text-center">
+										<div class="title">$(i18n('index.upload_an_application'))</div>
+										<div class="img-holder d-flex justify-content-center">
+											<div class="holder d-flex align-items-center">
+												<picture>
+													<source srcset="images/step2-img-large.png, images/step2-img-large-2x.png 2x">
+													<img src="images/hero-img-large.png" width="132" height="115" alt="image description">
+												</picture>
+											</div>
+										</div>
+										<div class="text-holder">
+											<p>$(i18n('index.adding_an_application_is_as_simple_as_uploading_an_ios_or_and'))</p>
+										</div>
+									</li>
+									<li class="text-center">
+										<div class="title">$(i18n('index.invite_users'))</div>
+										<div class="img-holder d-flex justify-content-center">
+											<div class="holder d-flex align-items-center ">
+												<picture>
+													<source srcset="images/step3-img-large.png, images/step3-img-large-2x.png 2x">
+													<img src="images/hero-img-large.png" width="190" height="121" alt="image description">
+												</picture>
+											</div>
+										</div>
+										<div class="text-holder">
+											<p>$(i18n('index.users_will_receive_an_email_invitation_to_install_your_privat'))</p>
+										</div>
+									</li>
+									<li class="text-center">
+										<div class="title">$(i18n('index.users_install_your_apps'))</div>
+										<div class="img-holder d-flex justify-content-center">
+											<div class="holder d-flex align-items-center">
+												<picture>
+													<source srcset="images/step4-img-large.png, images/step4-img-large-2x.png 2x">
+													<img src="images/hero-img-large.png" width="116" height="119" alt="image description">
+												</picture>
+											</div>
+										</div>
+										<div class="text-holder">
+											<p>$(i18n('index.all_your_apps_are_available_through_your_native_ios_and_andro'))</p>
+										</div>
+									</li>
+								</ol>
+								<div class="section-link-holder text-center">
+									<a href="/$(lang)/features" class="section-link">$(i18n('index.deploying_apps_takes_minutes_see_for_yourself'))</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testimonial-section skew-burly-wood order-5 order-lg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<header class="section-header">
+									<h2 class="title text-center">$(i18n('index.our_customers_html'))</h2>
+								</header>
+								<div id="testimonial-carousel" class="testimonial-carousel carousel slide" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="holder">
+											<div class="carousel-item active">
+												<blockquote class="blockquote">
+													<div class="text-wrap">
+														<p>$(i18n('index.testimonial_1_quote_html'))</p>
+													</div>
+													<footer class="blockquote-footer d-flex">
+														<div class="img-holder">
+															<img src="images/la-poste-sandy-brown-img.svg" width="60" height="48" alt="LA POSTE">
+														</div>
+														<div class="text-holder">
+															<cite title="$(i18n('index.testimonial_1_customer'))">$(i18n('index.testimonial_1_customer'))</cite>
+															<p>$(i18n('index.testimonial_1_customer_title')) <br class="d-lg-none">$(i18n('index.testimonial_1_customer_title_desc'))</p>
+														</div>
+													</footer>
+												</blockquote>
+											</div>
+											<div class="carousel-item">
+												<blockquote class="blockquote">
+													<div class="text-wrap">
+														<p>$(i18n('index.testimonial_2_quote_html'))</p>
+													</div>
+													<footer class="blockquote-footer d-flex">
+														<div class="img-holder">
+															<img src="images/leroy-merlin-sandy-brown-img.svg" width="60" height="48" alt="Leroy Merlin">
+														</div>
+														<div class="text-holder">
+															<cite title="$(i18n('index.testimonial_2_customer'))">$(i18n('index.testimonial_2_customer'))</cite>
+															<p>$(i18n('index.testimonial_2_customer_title')) <br class="d-lg-none">$(i18n('index.testimonial_2_customer_title_desc'))</p>
+														</div>
+													</footer>
+												</blockquote>
+											</div>
+											<div class="carousel-item">
+												<blockquote class="blockquote">
+													<div class="text-wrap">
+														<p>$(i18n('index.testimonial_3_quote_html'))</p>
+													</div>
+													<footer class="blockquote-footer d-flex">
+														<div class="img-holder">
+															<img src="images/jaeger-lecoultre-sandy-brown-img.svg" width="60" height="48" alt="Jaeger lecoultre">
+														</div>
+														<div class="text-holder">
+															<cite title="$(i18n('index.testimonial_3_customer'))">$(i18n('index.testimonial_3_customer'))</cite>
+															<p>$(i18n('index.testimonial_3_customer_title')) <br class="d-lg-none">$(i18n('index.testimonial_3_customer_title_desc'))</p>
+														</div>
+													</footer>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">$(i18n('index.previous'))</span>
+									</a>
+									<a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">$(i18n('index.next'))</span>
+									</a>
+								</div>
+								<div class="section-link-holder text-center">
+									<a href="/$(lang)/customers" class="section-link">$(i18n('index.hear_from_our_customers'))</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="call-to-action order-5 order-lg-1">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+								<div class="holder mx-auto">
+									<header class="section-header">
+										<h2 class="title text-center">$(i18n('call_to_action_2018.try_appaloosa_html'))</h2>
+									</header>
+									<form class="form-action d-flex flex-column flex-lg-row justify-content-between mx-auto">
+										<div class="form-group">
+											<label for="email" class="sr-only">$(i18n('call_to_action_2018.work_email'))</label>
+											<input type="email" class="form-control" id="email" placeholder="$(i18n('call_to_action_2018.enter_work_email'))">
+										</div>
+										<button type="submit" class="btn btn-primary">$(i18n('call_to_action_2018.get_started'))</button>
+									</form>
+									<ul class="info-list list-unstyled d-flex justify-content-center flex-wrap text-secondary">
+										<li>$(i18n('call_to_action_2018.14_days_free_trial'))</li>
+										<li>$(i18n('call_to_action_2018.no_credit_card_required'))</li>
+										<li>$(i18n('call_to_action_2018.cancel_anytime'))</li>
+									</ul>
+									<div class="demo-box d-flex align-items-center justify-content-between justify-content-lg-center">
+										<div class="text-warning">$(i18n('call_to_action_2018.need_a_quick_11_demo_to_walk_you_through_appaloosa'))</div>
+										<a href="#" class="btn btn-warning text-white">$(i18n('call_to_action_2018.schedule_a_demo'))</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer of the page -->
+		<!--#include virtual="inc/footer.shtml" -->
+	</div>
+</body>
+</html>

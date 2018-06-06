@@ -1,0 +1,116 @@
+/* ---------------------------------------------------------
+	Customers page styles
+---------------------------------------------------------*/
+.testimonial-box {
+	padding: rem-calc(26 0 43);
+	@include media('>=desktop') {
+		padding: rem-calc(79 0 118);
+	}
+	.section-header {
+		margin-bottom: rem-calc(48);
+		@include media('>=desktop') {
+			margin-bottom: rem-calc(77);
+		}
+		.title {
+			font: {
+				weight: 900;
+				size: rem-calc(25);
+			};
+			max-width: 648px;
+			letter-spacing: -.003em;
+			@include media('<desktop') {
+				line-height: 1.4;
+			}
+			@include media('>=desktop') {
+				font-size: rem-calc(40);
+			}
+		}
+	}
+	.customers-list {
+		li {
+			margin: rem-calc(0 20 37);
+		}
+	}
+}
+
+.features-box {
+	margin-bottom: rem-calc(53);
+	@include media('>=desktop') {
+		margin-bottom: rem-calc(137);
+	}
+	.section-header {
+		margin-bottom: rem-calc(60);
+		@include media('>=desktop') {
+			margin-bottom: rem-calc(53);
+		}
+		.title {
+			font-size: rem-calc(24);
+			@include media('>=desktop') {
+				letter-spacing: -.02em;
+				font-size: rem-calc(40);
+			}
+		}
+	}
+	.bg-gradient-primary {
+		box-shadow: 0 2px 6px 0 rgba($black, .03);
+	}
+}
+
+.card-list {
+	.card {
+		width: 300px;
+		margin: rem-calc(0 0 40);
+		@include media('>=tablet') {
+			width: 162px;
+			margin: rem-calc(0 20);
+		}
+		@include media('>=desktop') {
+			margin: rem-calc(0 40);
+		}
+	}
+	.card-header {
+		width: 180px;
+		height: 194px;
+		padding-bottom: rem-calc(29);
+		@include media('>=tablet') {
+			width: 100%;
+		}
+		.card-title {
+			margin-bottom: 0;
+		}
+		.customer {
+			flex-grow: 1;
+			line-height: 1.174;
+			font-size: rem-calc(12);
+		}
+		.name {
+			font: {
+				weight: 700;
+				family: $font-family-Whitney;
+			};
+			margin-bottom: rem-calc(4);
+			&.text-small {
+				font-size: rem-calc(23);
+			}
+		}
+	}
+}
+
+.testimonial-carousel-box {
+	margin-bottom: rem-calc(110);
+	@include media('>=desktop') {
+		margin-bottom: rem-calc(14);
+	}
+	.section-header {
+		margin-bottom: rem-calc(71);
+		@include media('>=desktop') {
+			margin-bottom: rem-calc(47);
+		}
+		.title {
+			letter-spacing: -.013em;
+			@include media('>=desktop') {
+				font-size: rem-calc(40);
+			}
+		}
+	}
+}

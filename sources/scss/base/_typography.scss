@@ -1,0 +1,25 @@
+/* ---------------------------------------------------------
+	 Typography Styles
+---------------------------------------------------------*/
+h1, .h1 {
+	font-weight: 900;
+	@include media('<desktop') {
+		font-size: rem-calc(25);
+	}
+}
+
+h2, .h2 {
+	@include media('<desktop') {
+		font-size: rem-calc(24);
+	}
+}
+
+a {
+	transition: color $animation-speed ease-in-out;
+}
+
+p {
+	&:last-of-type, &:only-child {
+		margin-bottom: 0;
+	}
+}

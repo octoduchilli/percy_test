@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- set the encoding of your site -->
+  <meta charset="utf-8">
+  <!-- set the viewport width and initial-scale on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appaloosa</title>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- include the site stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+</head>
+<body>
+<!-- main container of all the page elements -->
+  <div id="wrapper">
+    <!-- header of the page -->
+    <!--#include virtual="inc/header-simple.shtml" -->
+    <!-- contain main informative part of the site -->
+    <main id="main">
+      <div class="sign-up-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="text-box text-center mx-auto">
+                <h1 class="title">Start your free trial<span class="d-none d-lg-inline-block"> and deploy apps in minutes</span></h1>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-lg-center">
+            <div class="col col-lg-5 d-none d-lg-block">
+              <div class="info-content mx-auto">
+                <div class="block-info">
+                  <div class="logo-holder d-flex align-items-center">
+                    <a href="#" class="logo">
+                      <img src="images/logo.svg" width="46" height="46" alt="appaloosa">
+                    </a>
+                    <div class="descriptor">appaloosa</div>
+                  </div>
+                  <div class="text-holder">
+                    <p>Drive your enterprise apps adoption through an intuitive and secure private app store.</p>
+                  </div>
+                </div>
+                <div class="block-info">
+                  <h2 class="h6 title">Completely free trial for 14 days</h2>
+                  <ul class="list-holder list-unstyled mb-0">
+                    <li>No credit card required.</li>
+                    <li>Start deploying apps in minutes.</li>
+                    <li>Cancel anytime.</li>
+                  </ul>
+                </div>
+                <div class="block-info">
+                  <h2 class="h6 title">Trusted by great companies</h2>
+                  <ul class="customers-list list-unstyled d-flex justify-content-between flex-wrap mb-0 w-100">
+                    <li><img src="images/bnp-paribas-light-gray-img.svg" width="158" height="37" alt="BNP PARIBAS"></li>
+                    <li><img src="images/saint-gobain-light-gray-img.svg" width="109" height="45" alt="SAINT GOBAIN"></li>
+                    <li><img src="images/sncf-light-gray-img.svg" width="70" height="39" alt="SNCF"></li>
+                    <li><img src="images/la-poste-light-gray-img.svg" width="122" height="34" alt="LA POSTE"></li>
+                    <li><img src="images/leroy-merlin-light-gray-img.svg" width="72" height="43" alt="LEROY MERLIN"></li>
+                    <li><img src="images/canal-plus-light-gray-img.svg" width="124" height="23" alt="CANAL Plus"></li>
+                    <li><img src="images/jarger-lecoultre-light-gray-img.svg" width="171" height="42" alt="Jarger leCoultre"></li>
+                    <li><img src="images/tapptic-light-gray-img.svg" width="91" height="26" alt="tapptic"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-5">
+              <div class="sign-up-form-holder mx-auto">
+                <form class="sign-up-form mx-auto">
+                  <div class="form-group-holder">
+                    <label for="user-name">First and last name</label>
+                    <div class="form-row">
+                      <div class="form-group col-6">
+                        <input type="text" class="form-control" id="user-name" placeholder="First name">
+                      </div>
+                      <div class="form-group col-6">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Work email</label>
+                      <input type="email" class="form-control is-invalid" id="email" placeholder="Enter work email">
+                      <p class="form-group-error-message">
+                        You can't leave this empty.
+                      </p>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Choose a password (for Appaloosa)">
+                    </div>
+                    <div class="form-group">
+                      <label for="app-name">App store name</label>
+                      <input type="text" class="form-control" id="app-name" placeholder="The name of your app store (optional)">
+                    </div>
+                  </div>
+                  <div class="btn-holder">
+                    <button type="submit" class="btn btn-primary w-100">Sign up for free</button>
+                  </div>
+                </form>
+                <div class="form-description text-center">
+                  By signing up, I agree to the <a href="#">Terms of Service</a> <br>and <a href="#">Privacy Policy</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

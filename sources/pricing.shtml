@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>$(i18n('plan_pricing.page_title')) | Appaloosa Store</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- include jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+</head>
+<body>
+<!--#set var="activepage" value="pricing" -->
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<!--#include virtual="inc/header.shtml" -->
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<div class="comparison-table-section">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="info text-center">
+								<header class="section-header">
+									<h2 class="title text-center">$(i18n('plan_pricing.simple_payperuser_pricing_html'))</h2>
+									<div class="subtitle">$(i18n('plan_pricing.start_your_free_14_days_trial_and_deploy_apps_in_minutes'))</div>
+								</header>
+								<div class="btn-holder">
+									<a href="/registrations/new?locale=$(lang)" class="btn btn-primary">$(i18n('plan_pricing.try_our_enterprise_plan_for_free_html'))</a>
+								</div>
+								<ul class="info-list list-unstyled d-flex justify-content-center mb-0">
+									<li>$(i18n('plan_pricing.no_credit_card_required'))</li>
+									<li>$(i18n('plan_pricing.easy_setup'))</li>
+									<li>$(i18n('plan_pricing.cancel_anytime'))</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="custom-table-holder d-flex flex-column flex-lg-row">
+								<ul class="th-list list-unstyled mb-0">
+									<li class="th">
+										<div class="table-th-title">$(i18n('plan_pricing.our_plans'))</div>
+									</li>
+									<li>
+										<div class="holder-column">
+											<div class="img-holder">
+												<img src="images/apps-img.svg" width="67" height="32" alt="image description">
+											</div>
+											<div class="title">$(i18n('plan_pricing.max_number_of_apps_versions'))</div>
+										</div>
+									</li>
+									<li>
+										<div class="holder-column">
+											<div class="img-holder">
+												<img src="images/user-img.svg" width="54" height="36" alt="image description">
+											</div>
+											<div class="title">$(i18n('plan_pricing.max_number_of_users'))</div>
+										</div>
+									</li>
+									<li>
+										<div class="title">$(i18n('plan_pricing.support'))</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.groups_based_deployment'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_group_deployment_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.user_feedback'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_feedback_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.native_app_stores_for_ios_amp_android'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_native_store_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.push_notifications'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_notif_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.android_for_work'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_afw_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.multiple_app_stores'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_multistore_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.private_api_and_dev_integrations'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_api_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.advanced_analytics_amp_customization'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_stats_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.analytics_amp_security_sdk'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_security_sdk_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.user_directory_amp_sso_authentication'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_sso_tooltip'))"></i>
+										</div>
+									</li>
+									<li>
+										<div class="holder-row">
+											<div class="title">$(i18n('plan_pricing.custom_domain_url'))</div>
+											<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_custom_url_tooltip'))"></i>
+										</div>
+									</li>
+								</ul>
+								<ul class="table-list table-list-primary list-unstyled">
+									<li class="th">
+										<div class="price-wrap">
+											<div class="price-title">$(i18n('plan_pricing.plus'))</div>
+											<div class="price-holder">
+												<span class="price">$(i18n('plan_pricing.euros_149'))</span>
+											</div>
+											<div class="info-text">
+												<strong>$(i18n('plan_pricing.per_usermonth'))</strong>
+												<span>$(i18n('plan_pricing.minimum_20_users_298'))</span>
+											</div>
+										</div>
+										<a href="/registrations/new?locale=$(lang)" class="btn btn-primary">$(i18n('plan_pricing.try_free'))</a>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.5_apps_10_versions_per_app'))</strong>
+										<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_apps_tooltip'))"></i>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.100_users'))</strong>
+										<i class="icon-question-circle" data-toggle="tooltip" data-placement="top" title="$(i18n('plan_pricing.pricing_features_users_tooltip'))"></i>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.online'))</strong>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul class="table-list table-list-danger list-unstyled">
+									<li class="th">
+										<div class="price-wrap">
+											<div class="price-title">$(i18n('plan_pricing.enterprise'))</div>
+											<div class="price-holder">
+												<span class="price">$(i18n('plan_pricing.euros_249'))</span>
+											</div>
+											<div class="info-text">
+												<strong>$(i18n('plan_pricing.per_usermonth'))</strong>
+												<span>$(i18n('plan_pricing.minimum_100_users_249'))</span>
+											</div>
+										</div>
+										<a href="/registrations/new?locale=$(lang)" class="btn btn-primary">$(i18n('plan_pricing.try_free'))</a>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.unlimited_apps_and_versions'))</strong>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.unlimited'))</strong>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.priority'))</strong>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li></li>
+									<li></li>
+								</ul>
+								<ul class="table-list table-list-warning compare-table-list list-unstyled">
+									<li class="th">
+										<div class="price-wrap">
+											<div class="price-title">$(i18n('plan_pricing.custom'))</div>
+											<div class="price-holder">
+												<span>$(i18n('plan_pricing.contact_us'))</span>
+											</div>
+											<div class="info-text">
+												<strong>$(i18n('plan_pricing.volume_discounts_guided_html'))</strong>
+											</div>
+										</div>
+										<a href="#" class="btn btn-primary">$(i18n('plan_pricing.contact_us'))</a>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.unlimited_apps_and_versions'))</strong>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.unlimited'))</strong>
+									</li>
+									<li>
+										<strong>$(i18n('plan_pricing.dedicated_account_manager_html'))</strong>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="d-none d-lg-flex">
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li>
+										<i class="icon-check-circle"></i>
+									</li>
+									<li class="compare d-flex d-lg-none">
+										<i class="icon-check-circle"></i>
+										<div class="title">$(i18n('plan_pricing.includes_everything_in_html'))</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="free-plan align-items-center d-none d-lg-flex">
+								<div class="info-text">
+									<p>$(i18n('plan_pricing.only_need_to_deploy_one_app_to_a_limited_number_of_users'))</p>
+								</div>
+								<div class="d-flex align-items-center">
+									<div class="title d-flex flex-column">
+										<strong>$(i18n('plan_pricing.free'))</strong>
+										<span>$(i18n('plan_pricing.try_our_limited_free_plan'))</span>
+									</div>
+									<ul class="list-holder list-unstyled d-flex flex-wrap mb-0">
+										<li class="d-flex align-items-center flex-nowrap">
+											<i class="icon-check-circle"></i>
+											<strong>$(i18n('plan_pricing.1_apps_5_versions'))</strong>
+										</li>
+										<li class="d-flex align-items-center flex-nowrap">
+											<i class="icon-check-circle"></i>
+											<strong>$(i18n('plan_pricing.5_users_maximum'))</strong>
+										</li>
+										<li class="d-flex align-items-center flex-nowrap">
+											<i class="icon-check-circle"></i>
+											<strong>$(i18n('plan_pricing.group_based_deployment'))</strong>
+										</li>
+										<li class="d-flex align-items-center flex-nowrap">
+											<i class="icon-check-circle"></i>
+											<strong>$(i18n('plan_pricing.online_support'))</strong>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="common-questions">
+				<div class="container">
+					<div class="row">
+						<div class="col col-md-8 mx-md-auto">
+							<header class="section-header">
+								<h2 class="title text-center">$(i18n('plan_pricing.common_html'))</h2>
+							</header>
+							<div class="faq">
+								<div class="text-holder">
+									<div class="title h5">$(i18n('plan_pricing.can_i_try_appaloosa_before_i_buy'))</div>
+									<p>$(i18n('plan_pricing.yes_of_course_your_first_14_days_come_fully_loaded_with_eve'))</p>
+								</div>
+                                <div class="text-holder">
+									<div class="title h5">$(i18n('plan_pricing.what_is_mobile_application_management'))</div>
+									<p>$(i18n('plan_pricing.mobile_application_management_is_a_subset_html'))</p>
+								</div>
+								<div class="text-holder">
+									<div class="title h5">$(i18n('plan_pricing.what_happens_when_the_trials_up_will_i_be_charged'))</div>
+									<p>$(i18n('plan_pricing.no_we_dont_ask_for_your_credit_card_up_front_so_we_cant_charg'))</p>
+								</div>
+								<div class="text-holder">
+									<div class="title h5">$(i18n('plan_pricing.is_there_a_setup_fee'))</div>
+									<p>$(i18n('plan_pricing.there_are_no_setup_fees_on_our_free_plus_and_enterprise_plans'))</p>
+								</div>
+								<div class="text-holder">
+									<div class="title h5">$(i18n('plan_pricing.can_i_cancel_my_account_at_any_time'))</div>
+									<p>$(i18n('plan_pricing.yes_if_you_ever_decide_that_appaloosa_isnt_the_best_mam_platf'))</p>
+								</div>
+								<div class="text-holder">
+									<div class="title h5">$(i18n('plan_pricing.can_i_change_my_plan_later_on'))</div>
+									<p>$(i18n('plan_pricing.yes_absolutely_you_can_upgrade_or_downgrade_your_plan_at_any_'))</p>
+								</div>
+								<div class="text-holder">
+									<div class="title h5">$(i18n('plan_pricing.what_type_of_payment_do_you_accept'))</div>
+									<p>$(i18n('plan_pricing.we_accept_all_major_credit_card_types_we_also_support_manual_'))</p>
+								</div>
+								<div class="text-holder">
+									<div class="title h5">$(i18n('plan_pricing.is_there_a_minimum_billing'))</div>
+									<p>$(i18n('plan_pricing.yes_for_both_startup_and_business_plans_we_bill_a_minimum_of_'))</p>
+								</div>
+							</div>
+							<div class="btn-holder text-center">
+								<a href="#" class="btn btn-outline-success">$(i18n('plan_pricing.still_have_questions_chat_with_us'))</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="call-to-action">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="holder mx-auto">
+								<header class="section-header">
+									<h2 class="title text-center">$(i18n('call_to_action_2018.try_appaloosa_html'))</h2>
+								</header>
+								<form class="form-action d-flex flex-column flex-lg-row justify-content-between mx-auto">
+									<div class="form-group">
+										<label for="email" class="sr-only">$(i18n('call_to_action_2018.work_email'))</label>
+										<input type="email" class="form-control" id="email" placeholder="$(i18n('call_to_action_2018.enter_work_email'))">
+									</div>
+									<button type="submit" class="btn btn-primary">$(i18n('call_to_action_2018.get_started'))</button>
+								</form>
+								<ul class="info-list list-unstyled d-flex justify-content-center flex-wrap text-secondary">
+									<li>$(i18n('call_to_action_2018.no_credit_card_required'))</li>
+									<li>$(i18n('call_to_action_2018.easy_setup'))</li>
+									<li>$(i18n('call_to_action_2018.cancel_anytime'))</li>
+								</ul>
+								<div class="demo-box d-flex align-items-center justify-content-between justify-content-lg-center">
+									<div class="text-warning">$(i18n('call_to_action_2018.need_a_quick_11_demo_to_walk_you_through_appaloosa'))</div>
+									<a href="#" class="btn btn-warning text-white">$(i18n('call_to_action_2018.schedule_a_demo'))</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer of the page -->
+		<!--#include virtual="inc/footer.shtml" -->
+	</div>
+</body>
+</html>

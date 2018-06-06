@@ -1,0 +1,112 @@
+.btn {
+	position: relative;
+	font: {
+		weight: 600;
+		family: $font-family-Whitney;
+	};
+	border-radius: 4px;
+	&:not([class*='btn-outline']) {
+		border: none;
+	}
+	&:after {
+		display: none;
+		left: 0;
+		bottom: -2px;
+		width: 100%;
+		height: 4px;
+		content: '';
+		position: absolute;
+		opacity: 0;
+	}
+	@include media('>=desktop') {
+		&:hover {
+			&:after {
+				display: block;
+			}
+		}
+	}
+}
+
+.btn-red {
+	background: #EF6F39;
+	background-image: linear-gradient(4deg, rgba($white,.10) 0%, rgba(238, 255, 121,.26) 100%);
+	&:hover {
+		background: #EF6F39;
+		background-image: linear-gradient(4deg, rgba($white,.10) 0%, rgba(238, 255, 121,.26) 100%);
+	}
+}
+
+.btn-green {
+	background: #3EDB92;
+	background-image: linear-gradient(184deg, rgba(255,243,162,.10) 0%, rgba(201,79,255,.09) 100%);
+	&:hover {
+		background: #3EDB92;
+		background-image: linear-gradient(184deg, rgba(255,243,162,.10) 0%, rgba(201,79,255,.09) 100%);
+	}
+}
+
+.btn-blue {
+	background: #62BBB3;
+	background-image: linear-gradient(184deg, rgba(238,255,121,.25) 0%, rgba(255,255,255,.10) 100%);
+	&:hover {
+		background: #62BBB3;
+		background-image: linear-gradient(184deg, rgba(238,255,121,.25) 0%, rgba(255,255,255,.10) 100%);
+	}
+}
+
+.btn-primary {
+	@extend .btn-red;
+	box-shadow: 0 2px 2px 0 rgba($black, .09);
+	transition: all 380ms cubic-bezier(.29,.09,.09,1);
+	&:hover {
+		transform: translate3d(0, -1px, 0);
+		box-shadow: 0 8px 14px 0 rgba($black, .15);
+	}
+}
+
+.btn-secondary {
+	@extend .btn-green;
+	box-shadow: 0 2px 2px 0 rgba($black, .07);
+	transition: all 380ms cubic-bezier(.29,.09,.09,1);
+	&:hover {
+		transform: translate3d(0, -1px, 0);
+		box-shadow: 0 8px 14px 0 rgba($black, .15);
+	}
+}
+
+.btn-warning {
+	background: #F4B96B;
+	background-image: linear-gradient(182deg, rgba(255,243,162,.12) 0%, rgba(201,79,255,.11) 100%);
+	&:hover {
+		background: lighten(#F4B96B, 10%);
+	}
+}
+
+.btn-outline-success {
+	&:hover {
+		color: #FFFFFF;
+	}
+}
+
+.btn-with-logo {
+	.btn {
+		display: flex;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		padding-right: rem-calc(24);
+		padding-left: 0;
+		overflow: hidden;
+		.btn-with-logo-img {
+			display: flex;
+			height: 54px;
+			width: 54px;
+			background-color: #FAFAFA;
+			justify-content: center;
+			align-items: center;
+		}
+		.btn-with-logo-text {
+			padding-left: rem-calc(24);
+			line-height: 52px;
+		}
+	}
+}

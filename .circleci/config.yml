@@ -1,0 +1,77 @@
+version: 2
+jobs:
+  generate_tmp:
+    working_directory: /home/circleci/website
+    docker:
+      - image: circleci/node:8.9.0
+      - image: circleci/python:2.7.14
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install-dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: generate-tmp
+          command: |
+            npm run clean
+            npm run generate:template
+            npm run generate:css
+            npm run move:assets
+      - persist_to_workspace:
+          root: /home/circleci/
+          paths:
+            - website
+  deploy_demo:
+    working_directory: /home/circleci/website
+    docker:
+      - image: circleci/node:8.9.0
+    steps:
+      - attach_workspace:
+          at: /home/circleci/
+      - run:
+          command: |
+            export AWS_REGION=$AWS_REGION_DEMO
+            export AWS_BUCKET=$AWS_BUCKET_DEMO
+            ./node_modules/.bin/webpack --env prod
+  deploy_prod:
+    working_directory: /home/circleci/website
+    docker:
+      - image: circleci/node:8.9.0
+    steps:
+      - attach_workspace:
+          at: /home/circleci/
+      - run:
+          command: |
+            export AWS_REGION=$AWS_REGION_PROD
+            export AWS_BUCKET=$AWS_BUCKET_PROD
+            ./node_modules/.bin/webpack --env prod
+workflows:
+  version: 2
+  deploy_website:
+    jobs:
+      - generate_tmp:
+          filters:
+            branches:
+              only:
+                - master
+                - develop
+      - deploy_demo:
+          filters:
+            branches:
+              only:
+                - develop
+          requires:
+            - generate_tmp
+      - deploy_prod:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - generate_tmp

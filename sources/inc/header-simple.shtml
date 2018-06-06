@@ -1,0 +1,20 @@
+<header id="header" class="simple-header">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="simple-header-holder d-flex justify-content-center position-relative">
+          <!-- page logo -->
+          <div class="logo-holder d-flex align-items-end">
+            <a href="#" class="navbar-brand">
+              <img src="images/logo.svg" width="46" height="46" alt="appaloosa">
+            </a>
+            <div class="descriptor">appaloosa</div>
+          </div>
+          <a href="#" class="close position-absolute">
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

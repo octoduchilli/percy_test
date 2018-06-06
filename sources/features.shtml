@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>$(i18n('features.page_title')) | Appaloosa Store</title>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- include jQuery library -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+</head>
+<body>
+	<!--#set var="activepage" value="features" -->
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<!--#include virtual="inc/header.shtml" -->
+		<!-- contain main informative part of the site -->
+		<main id="main">
+			<div class="tab-box">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<nav>
+								<div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="enterprise-app-tab" data-toggle="tab" href="#nav-enterprise-app" role="tab" aria-controls="nav-enterprise-app" aria-selected="true">$(i18n('features.enterprise_app_store'))</a>
+									<a class="nav-item nav-link" id="app-beta-tab" data-toggle="tab" href="#nav-app-beta" role="tab" aria-controls="nav-app-beta" aria-selected="false">$(i18n('features.app_beta_test'))</a>
+								</div>
+							</nav>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="tab-content" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-enterprise-app" role="tabpanel" aria-labelledby="enterprise-app-tab">
+									<div class="d-flex flex-column">
+										<div class="tab-block">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.unified_private_app_catalog_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder order-md-1 d-none d-md-block">
+													<picture>
+														<source srcset="images/app-catalog-img-large.png, images/app-catalog-img-large-2x.png 2x">
+														<img src="images/app-catalog-img-large.png" width="271" height="254" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.deploy_native_public_and_web_apps_in_one_single_place_for_ios'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.split_professional_from_personal_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder d-none d-md-block">
+													<picture>
+														<source srcset="images/secure-grey-img-large.png, images/secure-grey-img-large-2x.png 2x">
+														<img src="images/secure-grey-img-large.png" width="317" height="227" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.suceed_at_byod_deployments_by_keeping_personal_and_corporate_'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.segment_deployments_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder order-md-1 d-none d-md-block">
+													<picture>
+														<source srcset="images/deployments-img-large.png, images/deployments-img-large-2x.png 2x">
+														<img src="images/deployments-img-large.png" width="362" height="256" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.achieve_highlytargeted_deployments_using_or_importing_your_us'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.selfservice_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder d-none d-md-block">
+													<picture>
+														<source srcset="images/self-service-img-large.png, images/self-service-img-large-2x.png 2x">
+														<img src="images/self-service-img-large.png" width="324" height="222" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.achieve_turnkey_deployments_with_user_selfservice_install_pre'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.branded_app_store_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder order-md-1 d-none d-md-block">
+													<picture>
+														<source srcset="images/branded-img-large.png, images/branded-img-large-2x.png 2x">
+														<img src="images/branded-img-large.png" width="224" height="234" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.engage_endusers_with_a_fullyfeatured_customizable_app_store_t'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.actionable_and_insightful_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder d-none d-md-block">
+													<picture>
+														<source srcset="images/analytics-img-large.png, images/analytics-img-large-2x.png 2x">
+														<img src="images/analytics-img-large.png" width="371" height="218" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.measure_app_downloads_feedback_and_ratings_and_get_a_better_u'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.sync_with_your_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder order-md-1 d-none d-md-block">
+													<picture>
+														<source srcset="images/sync-img-large.png, images/sync-img-large-2x.png 2x">
+														<img src="images/sync-img-large.png" width="263" height="222" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.make_sure_that_your_deployment_environment_can_only_be_access'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.apis_and_dev_integrations_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder d-none d-md-block">
+													<picture>
+														<source srcset="images/apis-img-large.png, images/apis-img-large-2x.png 2x">
+														<img src="images/apis-img-large.png" width="310" height="224" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.automate_app_publishing_user_or_group_management_with_your_fa'))</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="nav-app-beta" role="tabpanel" aria-labelledby="app-beta-tab">
+									<div class="d-flex flex-column">
+										<div class="tab-block order-1 order-lg-1">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.crossplatform_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder d-none d-md-block">
+													<picture>
+														<source srcset="images/cross-platform-img-large.png, images/cross-platform-img-large-2x.png 2x">
+														<img src="images/cross-platform-img-large.png" width="255" height="222" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.manage_your_beta_apps_on_ios_and_android_from_a_single_tool_i'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block order-2 order-lg-1">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.maximize_tester_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder order-md-1 d-none d-md-block">
+													<picture>
+														<source srcset="images/feedback-img-large.png, images/feedback-img-large-2x.png 2x">
+														<img src="images/feedback-img-large.png" width="186" height="153" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.keep_your_testers_on_the_latest_version_with_selfupdating_app'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block order-3 order-lg-1">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.finetune_beta_test_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder d-none d-md-block">
+													<picture>
+														<source srcset="images/deployments-2-img-large.png, images/deployments-2-img-large-2x.png 2x">
+														<img src="images/deployments-2-img-large.png" width="362" height="256" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.deploy_the_right_version_to_your_defined_user_groups_such_as_'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block order-5 order-lg-1">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.apis_and_dev_integrations_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder order-md-1 d-none d-md-block">
+													<picture>
+														<source srcset="images/apis-img-large.png, images/apis-img-large-2x.png 2x">
+														<img src="images/apis-img-large.png" width="310" height="224" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.automate_app_publishing_user_or_group_management_with_your_fa'))</p>
+												</div>
+											</div>
+										</div>
+										<div class="tab-block order-4 order-lg-1">
+											<header class="section-header">
+												<h2 class="title text-center">$(i18n('features.sync_with_your_html'))</h2>
+											</header>
+											<div class="info-holder d-flex justify-content-around align-items-center">
+												<div class="img-holder d-none d-md-block">
+													<picture>
+														<source srcset="images/sync-img-large.png, images/sync-img-large-2x.png 2x">
+														<img src="images/sync-img-large.png" width="263" height="222" alt="image description">
+													</picture>
+												</div>
+												<div class="text-holder">
+													<p>$(i18n('features.make_sure_that_your_deployment_environment_can_only_be_access'))</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<hr class="d-none d-md-block">
+				</div>
+			</div>
+			<div class="call-to-action">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="holder mx-auto">
+								<header class="section-header">
+									<h2 class="title text-center">$(i18n('call_to_action_2018.try_appaloosa_html'))</h2>
+								</header>
+								<form class="form-action d-flex flex-column flex-lg-row justify-content-between mx-auto">
+									<div class="form-group">
+										<label for="email" class="sr-only">$(i18n('call_to_action_2018.work_email'))</label>
+										<input type="email" class="form-control" id="email" placeholder="$(i18n('call_to_action_2018.enter_work_email'))">
+									</div>
+									<button type="submit" class="btn btn-primary">$(i18n('call_to_action_2018.get_started'))</button>
+								</form>
+								<ul class="info-list list-unstyled d-flex justify-content-center flex-wrap text-secondary">
+									<li>$(i18n('call_to_action_2018.14_days_free_trial'))</li>
+									<li>$(i18n('call_to_action_2018.no_credit_card_required'))</li>
+									<li>$(i18n('call_to_action_2018.cancel_anytime'))</li>
+								</ul>
+								<div class="demo-box d-flex align-items-center justify-content-between justify-content-lg-center">
+									<div class="text-warning">$(i18n('call_to_action_2018.need_a_quick_11_demo_to_walk_you_through_appaloosa'))</div>
+									<a href="#" class="btn btn-warning text-white">$(i18n('call_to_action_2018.schedule_a_demo'))</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer of the page -->
+		<!--#include virtual="inc/footer.shtml" -->
+	</div>
+</body>
+</html>

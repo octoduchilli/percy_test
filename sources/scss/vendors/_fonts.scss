@@ -1,0 +1,68 @@
+/* ---------------------------------------------------------
+	Embedded fonts styles
+---------------------------------------------------------*/
+@font-face {
+	font-family: 'Whitney';
+	src: url('../fonts/Whitney-Book.woff') format('woff'),
+		 url('../fonts/Whitney-Book.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Whitney';
+	src: url('../fonts/Whitney-Medium.woff') format('woff'),
+		 url('../fonts/Whitney-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Whitney';
+	src: url('../fonts/Whitney-Semibold.woff') format('woff'),
+		 url('../fonts/Whitney-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Whitney';
+	src: url('../fonts/Whitney-Bold.woff') format('woff'),
+		 url('../fonts/Whitney-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Whitney';
+	src: url('../fonts/Whitney-Black.woff') format('woff'),
+		 url('../fonts/Whitney-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Regular.woff') format('woff'),
+		 url('../fonts/SFProText-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Medium.woff') format('woff'),
+		 url('../fonts/SFProText-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Semibold.woff') format('woff'),
+		 url('../fonts/SFProText-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GTEestiDisplay';
+	src: url('../fonts/GTEestiDisplay-Medium.woff') format('woff'),
+		 url('../fonts/GTEestiDisplay-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}

@@ -1,0 +1,64 @@
+<footer id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="footer-top d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+					<div class="col-left d-flex align-items-center justify-content-between">
+						<div class="logo-holder d-flex align-items-center">
+							<a href="/" class="navbar-brand">
+								<img id="appaloosa-header-logo" alt="appaloosa" src="images/logo-appaloosa-enterprise-app-store.svg" width="174" height="54">
+								<span class="sr-only">($(i18n('header.current')))</span>
+								<!-- should be dynamique -->
+							</a>
+						</div>
+						<a href="/users/sign_in?locale=$(lang)" class="btn btn-secondary">$(i18n('header.log_in'))</a>
+					</div>
+					<div class="col-right d-flex justify-content-between justify-content-lg-start flex-nowrap">
+						<ul class="link-holder list-unstyled mb-0 d-flex flex-column flex-lg-row">
+							<li><a class="nav-link" href="/$(lang)/features">$(i18n('navigation.features'))</a></li>
+							<li><a class="nav-link" href="/$(lang)/pricing">$(i18n('navigation.pricing'))</a></li>
+							<li><a class="nav-link" href="/$(lang)/customers">$(i18n('navigation.customers'))</a></li>
+							<li><a class="nav-link" href="http://resources.appaloosa-store.com/">$(i18n('navigation.resources'))</a></li>
+						</ul>
+						<div class="dropdown">
+							<a class="dropdown-toggle" href="#" role="button" id="about-us" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">$(i18n('footer.about_us'))</a>
+							<div class="dropdown-menu" aria-labelledby="about-us">
+								<a class="dropdown-item" href="#">$(i18n('footer.the_team'))</a>
+								<a class="dropdown-item" href="#">$(i18n('footer.contact'))</a>
+								<a class="dropdown-item" href="#">$(i18n('footer.press'))</a>
+								<a class="dropdown-item" href="#">$(i18n('navigation.blog'))</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="footer-bottom d-flex flex-column align-items-lg-end">
+					<ul class="link-holder list-unstyled d-flex flex-column flex-lg-row">
+						<li><a class="nav-link" href="#">$(i18n('footer.privacy_policy'))</a></li>
+						<li><a class="nav-link" href="#">$(i18n('footer.terms_and_conditions'))</a></li>
+					</ul>
+					<div class="dropdown-languge dropdown d-none d-lg-block">
+						<a class="dropdown-toggle d-inline-flex align-items-center" href="/$(lang)" role="button" id="languge" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="images/fr-flag.svg" width="17" height="11" alt="fr-flag"> <!-- need to set the valid assets path >< -->
+							$(i18n('language_name'))
+						</a>
+						<div class="dropdown-menu" aria-labelledby="languge">
+							<a class="dropdown-item d-inline-flex align-items-center" href="/fr">
+								<img src="images/fr-flag.svg" width="17" height="11" alt="fr-flag">
+								$(i18n('footer.french'))
+							</a>
+							<a class="dropdown-item d-inline-flex align-items-center" href="/en">
+								<img src="images/en-flag.svg" width="17" height="11" alt="en-flag">
+								$(i18n('footer.english'))
+							</a>
+						</div>
+					</div>
+					<div class="copyright">© Appaloosa Technology</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
