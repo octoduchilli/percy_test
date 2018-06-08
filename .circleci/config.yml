@@ -23,8 +23,6 @@ jobs:
             npm run generate:template
             npm run generate:css
             npm run move:assets
-            npm run build
-            mv dist/styles dist/fr/
       - persist_to_workspace:
           root: /home/circleci/
           paths:
@@ -33,11 +31,14 @@ jobs:
     working_directory: /home/circleci/website
     docker:
       - image: circleci/ruby:2.4.1-node-browsers
+      - image: circleci/node:8.9.0
     steps:
       - attach_workspace:
           at: /home/circleci/
       - run:
           command: |
+            npm run build
+            mv dist/styles dist/fr/
             gem install percy-cli
             export PERCY_TOKEN=394ba02ec41b41c6ef01e0c9d2870bc4cfd1408c97d1e08d2c72d550435e4fdc
             export PERCY_PROJECT=octoduchilli/website
@@ -85,6 +86,7 @@ workflows:
           requires:
             - generate_tmp
       - percy:
+          type: approval
           requires:
             - generate_tmp
       - deploy_prod:
