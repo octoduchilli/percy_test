@@ -85,9 +85,14 @@ workflows:
                 - develop
           requires:
             - generate_tmp
+      - hold_percy:
+          type: approval
+          requires:
+           - generate_tmp
       - percy:
           requires:
             - generate_tmp
+            - hold_percy
       - deploy_prod:
           filters:
             branches:
