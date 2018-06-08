@@ -86,7 +86,6 @@ workflows:
           requires:
             - generate_tmp
       - percy:
-          type: approval
           requires:
             - generate_tmp
       - deploy_prod:
